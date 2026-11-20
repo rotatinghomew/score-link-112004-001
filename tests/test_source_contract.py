@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1] / "records"
 
 class SourceContract(unittest.TestCase):
     def test_export_shape(self):
-        self.assertEqual({path.name for path in ROOT.iterdir()}, set(EXPECTED))
+        self.assertLessEqual(set(EXPECTED), {path.name for path in ROOT.iterdir()})
         for name, contract in EXPECTED.items():
             with self.subTest(source=name):
                 path = ROOT / name

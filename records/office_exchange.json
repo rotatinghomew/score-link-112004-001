@@ -1,0 +1,155 @@
+{
+  "aid_limits": {
+    "青少": 2,
+    "青年": 1
+  },
+  "suspended_level": "not_issuable",
+  "signers": {
+    "北一": "N-accept",
+    "南一": "S-accept",
+    "南二": "S2-accept",
+    "西三": "W-accept",
+    "全国评阅": "J-score"
+  },
+  "exchange_fields": {
+    "scores": [
+      "release",
+      "person",
+      "paper",
+      "raw",
+      "score_low",
+      "score_high",
+      "basis"
+    ],
+    "places": [
+      "release",
+      "offer",
+      "person",
+      "slot_class",
+      "age_aid",
+      "valid_until",
+      "office_ref"
+    ]
+  },
+  "issued": [
+    {
+      "release": "r1",
+      "offer": "o1",
+      "person": "e1",
+      "slot_class": "北区",
+      "age_aid": "青少",
+      "valid_until": 108,
+      "office_ref": "N-1"
+    },
+    {
+      "release": "r1",
+      "offer": "o3",
+      "person": "e7",
+      "slot_class": "西区",
+      "age_aid": "青少",
+      "valid_until": 110,
+      "office_ref": "W-3"
+    },
+    {
+      "release": "r1",
+      "offer": "o2",
+      "person": "e3",
+      "slot_class": "南区",
+      "age_aid": null,
+      "valid_until": 105,
+      "office_ref": "S-2"
+    },
+    {
+      "release": "r2",
+      "offer": "o4",
+      "person": "e4",
+      "slot_class": "南区",
+      "age_aid": null,
+      "valid_until": 117,
+      "office_ref": "S-4"
+    }
+  ],
+  "receipts": [
+    {
+      "id": "sr1",
+      "offer": "o1",
+      "release": "r1",
+      "actor": "N-accept",
+      "effective_at": 102,
+      "received_at": 102,
+      "kind": "accept"
+    },
+    {
+      "id": "sr2",
+      "offer": "o3",
+      "release": "r1",
+      "actor": "W-accept",
+      "effective_at": 106,
+      "received_at": 107,
+      "kind": "accept"
+    },
+    {
+      "id": "sr3",
+      "offer": "o4",
+      "release": "r2",
+      "actor": "S2-accept",
+      "school": "南二",
+      "effective_at": 113,
+      "received_at": 113,
+      "kind": "accept"
+    },
+    {
+      "id": "sr4",
+      "offer": "o2",
+      "release": "r1",
+      "actor": "S-accept",
+      "effective_at": 104,
+      "received_at": 114,
+      "kind": "accept"
+    },
+    {
+      "id": "sr5",
+      "offer": "o3",
+      "release": "r1",
+      "actor": "W-accept",
+      "effective_at": 115,
+      "received_at": 116,
+      "kind": "cancel"
+    }
+  ],
+  "recognition": [
+    {
+      "id": "J3",
+      "batch": "ad3",
+      "effective_at": 103,
+      "actor": "J-score",
+      "anchor": "ac4",
+      "kind": "exclude"
+    },
+    {
+      "id": "J4",
+      "batch": "ad3",
+      "effective_at": 103,
+      "actor": "J-score",
+      "person": "e6",
+      "kind": "score",
+      "value": 82
+    },
+    {
+      "id": "J5",
+      "batch": "ad4",
+      "effective_at": 111,
+      "actor": "J-score",
+      "anchor": "ac4",
+      "kind": "keep"
+    },
+    {
+      "id": "J6",
+      "batch": "ad4",
+      "effective_at": 111,
+      "actor": "J-score",
+      "anchor": "ac4",
+      "kind": "exclude"
+    }
+  ]
+}

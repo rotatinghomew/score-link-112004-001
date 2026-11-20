@@ -19,6 +19,12 @@ CSV 使用 UTF-8、首行字段名，`-` 表示来源未填；JSON 使用原生�
 - `appeals.json`：记录数组。
 - `offers.csv`：`seq`, `offer`, `person`, `state`。
 
+## 补充来源说明
+
+- `anchor_registry.csv`：锚点底册。script 为匿名答卷，origin_school 是原学校。purpose 为 link 或独立核查 audit；请求只涉及同赛道、同轮。未在 `links.csv` 的 audit 锚点另带原分列。
+- `travel_roster.csv`：校级占位信息。travel 表示是否申请旅行资助，unfunded=1 同意无资助席位。
+- `office_exchange.json`：赛务办来件、名单交换的列约定及签收。出榜资格以版次固化时点为界；同一地区按保底后开放位，低 tiebreak 数值优先。待确认邀请在期限届满可释放，已接受只在明确取消时释放。校级权限只覆盖所属学校。
+
 ## 本地检查
 
 使用 Python 3.11 标准库，无需安装第三方依赖。构建检查和来源契约测试：
