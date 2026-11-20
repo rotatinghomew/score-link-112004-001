@@ -1,0 +1,27 @@
+{
+  "sessions": [
+    {"id": "tA", "region": "南区", "school_arrival_by": 117, "ticket_close": 116, "balance": {"青少": 1, "青年": 0}},
+    {"id": "tB", "region": "西区", "school_arrival_by": 125, "ticket_close": 120, "balance": {"青少": 1, "青年": 1}},
+    {"id": "tC", "region": "南区", "school_arrival_by": 130, "ticket_close": 124, "balance": {"青少": 1, "青年": 0}}
+  ],
+  "office_packets": [
+    {"release": "r1", "region": "南区", "part": "scores", "seq": 10, "at": 98, "kind": "accepted"},
+    {"release": "r1", "region": "南区", "part": "places", "seq": 11, "at": 99, "kind": "accepted"},
+    {"release": "r2", "region": "南区", "part": "scores", "seq": 12, "at": 110, "kind": "accepted"},
+    {"release": "r2", "region": "南区", "part": "places", "seq": 13, "at": 111, "kind": "rejected", "reason": "名单需回查"},
+    {"release": "r2", "region": "南区", "part": "places", "seq": 14, "at": 112, "kind": "accepted"}
+  ],
+  "ticket_packets": [
+    {"id": "tr1", "at": 112, "release": "r1", "offer": "o3", "session": "tB", "aid": "青少", "kind": "reserved"},
+    {"id": "tr2", "at": 114, "release": "r1", "offer": "o3", "session": "tB", "aid": "青少", "kind": "issued"},
+    {"id": "tr3", "at": 116, "release": "r1", "offer": "o3", "session": "tB", "aid": "青少", "kind": "cancellation_pending"},
+    {"id": "tr4", "at": 121, "release": "r1", "offer": "o3", "session": "tB", "aid": "青少", "kind": "cancelled"},
+    {"id": "tr5", "at": 115, "release": "r2", "offer": "o4", "session": "tA", "aid": null, "kind": "reserved"}
+  ],
+  "alternate_sessions": [
+    {"person": "e4", "acceptable": ["tA", "tC"], "reply_by": 121},
+    {"person": "e5", "acceptable": ["tB"], "reply_by": 119},
+    {"person": "e6", "acceptable": ["tB"], "reply_by": 116},
+    {"person": "e8", "acceptable": ["tC"], "reply_by": 122}
+  ]
+}

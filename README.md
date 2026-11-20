@@ -24,6 +24,7 @@ CSV 使用 UTF-8、首行字段名，`-` 表示来源未填；JSON 使用原生�
 - `anchor_registry.csv`：锚点底册。script 为匿名答卷，origin_school 是原学校。purpose 为 link 或独立核查 audit；请求只涉及同赛道、同轮。未在 `links.csv` 的 audit 锚点另带原分列。
 - `travel_roster.csv`：校级占位信息。travel 表示是否申请旅行资助，unfunded=1 同意无资助席位。
 - `office_exchange.json`：赛务办来件、名单交换的列约定及签收。出榜资格以版次固化时点为界；同一地区按保底后开放位，低 tiebreak 数值优先。待确认邀请在期限届满可释放，已接受只在明确取消时释放。校级权限只覆盖所属学校。
+- `travel_exchange.json`：赛务办独立接收两种版次交换资料。`office_packets` 按来件顺序列地区、版次和被接收/拒绝的表类型；某一张表的接收不确认另一张。`ticket_packets` 是旅行端实际收件或出行状态，以原邀请编号回查，`aid=null` 表示无资助。旅行资助名额受年龄档及所选班次的余量共同限制；`reserved`、`issued`、`cancellation_pending` 保留该班次的占用，`cancelled` 才归还。晚于 `ticket_close` 的归还不重新开放旧班；`school_arrival_by` 用于比对学校提交的到达承诺，时钟与邀请日一致。`alternate_sessions` 是学校可接受的班次及最迟答复日。
 
 ## 本地检查
 
