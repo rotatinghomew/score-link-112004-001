@@ -1,0 +1,36 @@
+[
+  {
+    "seq": 5,
+    "kind": "anchor",
+    "id": "ac4",
+    "state": "pending",
+    "possible_valid": [
+      0,
+      1
+    ]
+  },
+  {
+    "seq": 6,
+    "kind": "entry",
+    "id": "e6",
+    "state": "pending",
+    "possible_score": [
+      75,
+      89
+    ]
+  },
+  {
+    "seq": 8,
+    "kind": "anchor",
+    "id": "ac4",
+    "state": "resolved",
+    "valid": 0
+  },
+  {
+    "seq": 10,
+    "kind": "entry",
+    "id": "e6",
+    "state": "resolved",
+    "score": 89
+  }
+]

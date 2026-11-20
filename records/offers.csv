@@ -1,0 +1,7 @@
+seq,offer,person,state
+1,o1,e1,pending
+2,o1,e1,accepted
+3,o2,e3,pending
+4,o3,e7,pending
+7,o3,e7,accepted
+9,o2,e3,expired

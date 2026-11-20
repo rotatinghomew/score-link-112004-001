@@ -1,0 +1,14 @@
+{
+  "track": "S",
+  "round": 2,
+  "reference": "A",
+  "total": 5,
+  "region_min": {
+    "北区": 1,
+    "南区": 1,
+    "西区": 1
+  },
+  "min_distinct_sites": 2,
+  "max_link_difference": 5,
+  "level": 0.9
+}
